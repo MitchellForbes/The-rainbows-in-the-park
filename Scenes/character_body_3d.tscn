@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://cutqx5377l1tl"]
+
+[ext_resource type="Script" path="res://Player/character_body_3d.cs" id="1_ct3xm"]
+[ext_resource type="PackedScene" uid="uid://f3q1w1ys2tae" path="res://KayKit_Adventurers_1.0_FREE/Characters/gltf/Mage.glb" id="2_2brs8"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2r41o"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+axis_lock_linear_y = true
+script = ExtResource("1_ct3xm")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.72234, 0)
+shape = SubResource("CapsuleShape3D_2r41o")
+
+[node name="Mage" parent="." instance=ExtResource("2_2brs8")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.00284576, 0.00733765, -0.00373125)

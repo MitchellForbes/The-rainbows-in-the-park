@@ -1,0 +1,4 @@
+res://Scenes/character_body_3d.tscn
+res://Scenes/node_3d.tscn
+res://Player/CharacterBody3D.gd
+res://Player/character_body_3d.cs

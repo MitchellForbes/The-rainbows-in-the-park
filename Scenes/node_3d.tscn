@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://042xkc6a1c51"]
+
+[ext_resource type="PackedScene" uid="uid://cutqx5377l1tl" path="res://Scenes/character_body_3d.tscn" id="1_u8bf7"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dppqt"]
+
+[sub_resource type="MeshTexture" id="MeshTexture_pbqu5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n8idj"]
+albedo_color = Color(0.486275, 0.988235, 0, 1)
+albedo_texture = SubResource("MeshTexture_pbqu5")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_a1i5n"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Park" type="MeshInstance3D" parent="."]
+transform = Transform3D(11.7149, 0, 0, 0, 1, 0, 0, 0, 11.7149, 0, 0, 0)
+mesh = SubResource("PlaneMesh_dppqt")
+surface_material_override/0 = SubResource("StandardMaterial3D_n8idj")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Park"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Park/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_a1i5n")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.00181512, 0.999998, 0, -0.999998, -0.00181512, 0, 9.22172, 0)
+fov = 70.0
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_u8bf7")]
+script = null
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.849064, 0.52829, 0, -0.52829, 0.849064, -0.676804, 6.77689, 10.3843)

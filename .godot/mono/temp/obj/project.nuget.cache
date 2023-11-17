@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Fw3ozKJShBckmuwTEDOwjn8QFDAZw2GfURCKo72sTCgMgjtgjBR2zg22M3RmTELElEOXY0p0zvdwHAQJj00O6w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\1025637\\Desktop\\Godot\\The rainbows in the park\\The rainbows in the park.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\1025637\\.nuget\\packages\\godot.sourcegenerators\\4.1.3\\godot.sourcegenerators.4.1.3.nupkg.sha512",
+    "C:\\Users\\1025637\\.nuget\\packages\\godotsharp\\4.1.3\\godotsharp.4.1.3.nupkg.sha512",
+    "C:\\Users\\1025637\\.nuget\\packages\\godotsharpeditor\\4.1.3\\godotsharpeditor.4.1.3.nupkg.sha512"
+  ],
+  "logs": []
+}
