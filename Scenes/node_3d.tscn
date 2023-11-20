@@ -1,6 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://042xkc6a1c51"]
+[gd_scene load_steps=8 format=3 uid="uid://042xkc6a1c51"]
 
 [ext_resource type="PackedScene" uid="uid://cutqx5377l1tl" path="res://Scenes/character_body_3d.tscn" id="1_u8bf7"]
+[ext_resource type="PackedScene" uid="uid://dfqealsp4he2s" path="res://Scenes/Bomb.tscn" id="2_0m5u0"]
+[ext_resource type="PackedScene" uid="uid://smxemt7oo6g0" path="res://Scenes/bullet.tscn" id="3_e6a3p"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_dppqt"]
 
@@ -13,10 +15,10 @@ albedo_texture = SubResource("MeshTexture_pbqu5")
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_a1i5n"]
 data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" groups=["Bullets", "Player", "Spawners"]]
 
 [node name="Park" type="MeshInstance3D" parent="."]
-transform = Transform3D(11.7149, 0, 0, 0, 1, 0, 0, 0, 11.7149, 0, 0, 0)
+transform = Transform3D(19.5931, 0, 0, 0, 1, 0, 0, 0, 19.5931, 0, 0, 0)
 mesh = SubResource("PlaneMesh_dppqt")
 surface_material_override/0 = SubResource("StandardMaterial3D_n8idj")
 
@@ -26,11 +28,18 @@ surface_material_override/0 = SubResource("StandardMaterial3D_n8idj")
 shape = SubResource("ConcavePolygonShape3D_a1i5n")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -0.00181512, 0.999998, 0, -0.999998, -0.00181512, 0, 9.22172, 0)
+transform = Transform3D(1, 0, 0, 0, -0.00181512, 0.999998, 0, -0.999998, -0.00181512, 0, 12, 0)
 fov = 70.0
-
-[node name="CharacterBody3D" parent="." instance=ExtResource("1_u8bf7")]
-script = null
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.849064, 0.52829, 0, -0.52829, 0.849064, -0.676804, 6.77689, 10.3843)
+
+[node name="Player" parent="." groups=["Player"] instance=ExtResource("1_u8bf7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00984192, 0.360711, 2.72557)
+motion_mode = 0
+
+[node name="Bomb" parent="." instance=ExtResource("2_0m5u0")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0.180936, 0)
+
+[node name="Bullet" parent="." instance=ExtResource("3_e6a3p")]
+transform = Transform3D(0.4, 0, 0, 0, -1.74846e-08, -0.4, 0, 0.4, -1.74846e-08, -0.156694, 0.30097, -6.6493)

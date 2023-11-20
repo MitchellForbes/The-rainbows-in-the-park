@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("The rainbows in the park")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9a43a1255e80ae1986f68dbfd4bf7f1384a0698")]
 [assembly: System.Reflection.AssemblyProductAttribute("The rainbows in the park")]
 [assembly: System.Reflection.AssemblyTitleAttribute("The rainbows in the park")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

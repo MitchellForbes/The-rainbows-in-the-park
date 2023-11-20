@@ -1,5 +1,8 @@
+Area3D
+CollisionShape3D
+MeshInstance3D
+RigidBody3D
+SpringArm3D
 DirectionalLight3D
 Camera3D
-CollisionShape3D
 CharacterBody3D
-MeshInstance3D
