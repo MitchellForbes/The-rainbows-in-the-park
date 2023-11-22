@@ -1,10 +1,8 @@
 res://Scenes/Bomb.tscn
-res://Stuff/Bullet.cs
+res://Stuff/Main.cs
+res://Stuff/Bomb.cs
 res://Scenes/character_body_3d.tscn
 res://Scenes/bullet.tscn
 res://Scenes/node_3d.tscn
-res://Scenes/Main.cs
 res://Player/character_body_3d.cs
-res://Stuff/Bomb.cs
-res://Scenes/Bullet.cs
-res://Stuff/Main.cs
+res://Stuff/Bullet.cs
