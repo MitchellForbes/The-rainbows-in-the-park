@@ -88,19 +88,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\depre\\.nuget\\packages\\": {}
+    "C:\\Users\\1025637\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\depre\\OneDrive\\Desktop\\Weekly games\\Game8\\The-rainbows-in-the-park\\The rainbows in the park.csproj",
+      "projectUniqueName": "C:\\Users\\1025637\\Desktop\\Godot\\The rainbows in the park\\The rainbows in the park.csproj",
       "projectName": "The rainbows in the park",
-      "projectPath": "C:\\Users\\depre\\OneDrive\\Desktop\\Weekly games\\Game8\\The-rainbows-in-the-park\\The rainbows in the park.csproj",
-      "packagesPath": "C:\\Users\\depre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\depre\\OneDrive\\Desktop\\Weekly games\\Game8\\The-rainbows-in-the-park\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "C:\\Users\\1025637\\Desktop\\Godot\\The rainbows in the park\\The rainbows in the park.csproj",
+      "packagesPath": "C:\\Users\\1025637\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\1025637\\Desktop\\Godot\\The rainbows in the park\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\depre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\1025637\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -108,6 +113,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -150,26 +156,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.25, 6.0.25]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

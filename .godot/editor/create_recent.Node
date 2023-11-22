@@ -1,8 +1,13 @@
+Node3D
+CharacterBody3D
+PathFollow3D
+Path3D
+MeshInstance3D
+Node
+Timer
 Area3D
 CollisionShape3D
-MeshInstance3D
 RigidBody3D
 SpringArm3D
 DirectionalLight3D
 Camera3D
-CharacterBody3D

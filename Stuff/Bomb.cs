@@ -22,15 +22,17 @@ public partial class Bomb : Area3D
 	}
 	
 	void _on_body_entered(Node3D body)
-{
-	if (body != null && body.IsInGroup("Bullets"))
-	{
-		health -= 1;
-		GD.Print(health);
+	{	
+		if (body != null && body.IsInGroup("Bullets"))
+		{
+			health -= 1;
+			GD.Print(health);
+		}
 	}
-		 
-	
 }
-}
+
+
+
+
 
 
