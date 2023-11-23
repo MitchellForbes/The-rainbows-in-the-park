@@ -25,6 +25,8 @@ public partial class Main : Node3D
 		bullet.Initialize(bulletSpawnLocation.Position, playerPosition);
 		
 		AddChild(bullet);
+		
+		//bullet._on_area_3d_body_entered += GetNode<Score>("UserInterface/ScoreLabel").OnBulletHit;
 	}
 }
 

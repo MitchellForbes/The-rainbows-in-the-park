@@ -19,7 +19,7 @@ public partial class Bullet : CharacterBody3D
 		MoveAndSlide();
 	}
 	
-	private void _on_area_3d_body_entered(Node3D body)
+	public void _on_area_3d_body_entered(Node3D body)
 	{
 			QueueFree();
 	}

@@ -1,9 +1,10 @@
-[gd_scene load_steps=12 format=3 uid="uid://042xkc6a1c51"]
+[gd_scene load_steps=15 format=3 uid="uid://042xkc6a1c51"]
 
 [ext_resource type="Script" path="res://Stuff/Main.cs" id="1_k20as"]
 [ext_resource type="PackedScene" uid="uid://cutqx5377l1tl" path="res://Scenes/character_body_3d.tscn" id="1_u8bf7"]
 [ext_resource type="PackedScene" uid="uid://dfqealsp4he2s" path="res://Scenes/Bomb.tscn" id="2_0m5u0"]
 [ext_resource type="PackedScene" uid="uid://smxemt7oo6g0" path="res://Scenes/bullet.tscn" id="3_e6a3p"]
+[ext_resource type="Script" path="res://Scenes/Score.cs" id="5_6v60u"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_dppqt"]
 
@@ -26,6 +27,17 @@ _data = {
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0)
 }
 point_count = 6
+
+[sub_resource type="FontFile" id="FontFile_7x4ug"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[sub_resource type="Theme" id="Theme_b2g33"]
+default_font = SubResource("FontFile_7x4ug")
 
 [node name="Main" type="Node3D" groups=["Bullets", "Player", "Spawners"]]
 script = ExtResource("1_k20as")
@@ -84,5 +96,22 @@ curve = SubResource("Curve3D_2dmb3")
 
 [node name="SpawnLocation" type="PathFollow3D" parent="SpawnPath"]
 transform = Transform3D(0.00169487, 0, -0.999999, 0, 1, 0, 0.999999, 0, 0.00169487, -14.9894, 0, 15.0545)
+
+[node name="UserInterface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScoreLabel" type="Label" parent="UserInterface"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 36.0
+offset_right = 113.0
+offset_bottom = 62.0
+theme = SubResource("Theme_b2g33")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Score: 0"
+script = ExtResource("5_6v60u")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

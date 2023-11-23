@@ -1,8 +1,9 @@
-res://Scenes/Bomb.tscn
-res://Stuff/Main.cs
-res://Stuff/Bomb.cs
-res://Scenes/character_body_3d.tscn
-res://Scenes/bullet.tscn
 res://Scenes/node_3d.tscn
+res://Stuff/Main.cs
+res://Scenes/character_body_3d.tscn
+res://Scenes/Bomb.tscn
+res://Scenes/bullet.tscn
 res://Player/character_body_3d.cs
+res://Stuff/Bomb.cs
 res://Stuff/Bullet.cs
+res://Scenes/Score.cs
